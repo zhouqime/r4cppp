@@ -1,9 +1,14 @@
 # Introduction - hello world!
+# 介绍 - 世界，你好
 
 If you are using C or C++, it is probably because you have to - either you need
 low-level access to the system, or need every last drop of performance, or both.
 Rust aims to offer the same level of abstraction around memory, the same
 performance, but be safer and make you more productive.
+
+如果你正在使用 C 或 C++ 语言，极有可能是因为你不得不使用——要么是因为你需要访问系统底层，要么是
+你需要榨干最后一滴系统性能，在要么就是两者都有。Rust 语言的目标是：在提供相同内存抽象层次、相同
+性能的情况下，提供更安全、更有创造力的语言。
 
 Concretely, there are many languages out there that you might prefer to use to
 C++: Java, Scala, Haskell, Python, and so forth, but you can't because either
@@ -15,6 +20,10 @@ memory to play with. Rust subscribes to the 'pay for what you use' philosophy of
 C++. If you don't use a feature, then you don't pay any performance overhead for
 its existence. Furthermore, all language features in Rust have a predictable (and
 usually small) cost.
+
+具体而言，比起C++你可能更喜欢用如 Java, Scala, Haskell, Python 之类的其他语言，但是要么是因
+为抽象层次太高（例如无法直接访问内存、被强制使用自动垃圾收集等等），要么是因为存在性能问题（例如性
+能无法预测或者单纯的是不够快），你没办法使用这些语言。
 
 Whilst these constraints make Rust a (rare) viable alternative to C++, Rust also
 has benefits: it is memory safe - Rust's type system ensures that you don't get
