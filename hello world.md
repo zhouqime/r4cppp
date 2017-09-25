@@ -1,5 +1,5 @@
 # Introduction - hello world!
-# 介绍 - 世界，你好
+# 介绍 - 你好，世界
 
 If you are using C or C++, it is probably because you have to - either you need
 low-level access to the system, or need every last drop of performance, or both.
@@ -23,7 +23,9 @@ usually small) cost.
 
 具体而言，比起C++你可能更喜欢用如 Java, Scala, Haskell, Python 之类的其他语言，但是要么是因
 为抽象层次太高（例如无法直接访问内存、被强制使用自动垃圾收集等等），要么是因为存在性能问题（例如性
-能无法预测或者单纯的是不够快），你没办法使用这些语言。
+能无法预测或者单纯的是不够快），你没办法使用这些语言。Rust不会强制你使用自动垃圾收集，同时如C++一
+样，你可以直接操作内存的裸指针。Rust认同C++中'仅为使用到的特性买单'的哲学。如果你没有用到某个特性，
+你就不必为之付出任何性能开销。而且，Rust的所有语言特性都有可预测（通常也很小）的开销。
 
 Whilst these constraints make Rust a (rare) viable alternative to C++, Rust also
 has benefits: it is memory safe - Rust's type system ensures that you don't get
