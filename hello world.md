@@ -60,15 +60,25 @@ You can get Rust from [http://www.rust-lang.org/install.html](http://www.rust-la
 The downloads from there include the Rust compiler, standard libraries, and
 Cargo, which is a package manager and build tool for Rust.
 
+你能够从[http://www.rust-lang.org/install.html](http://www.rust-lang.org/install.html)
+获取Rust，包括Rust语言的编译器、标准库以及Cargo——Rust的包管理与构建工具。
+
 Rust is available on three channels: stable, beta, and nightly. Rust works on a
 rapid-release, schedule with new releases every six weeks. On the release date,
 nightly becomes beta and beta becomes stable.
 
+Rust提供3种版本：稳定版（stable）、公测版（beta）以及开发版（nightly）。Rust语言采用敏捷发布，
+按计划每6周发布新版。当新版发布时，开发版成为公测版，公测版成为稳定版。
+
 Nightly is updated every night and is ideal for users who want to experiment with
 cutting edge features and ensure that their libraries will work with future Rust.
 
+开发版每天晚上都会更新，适合想体验尖端特征同时兼容未来Rust的开发者。
+
 Stable is the right choice for most users. Rust's stability guarantees only
 apply to the stable channel.
+
+稳定版对于大部分开发者来说都是正确的选择。Rust的稳定性保证仅仅在稳定版本适用。
 
 Beta is designed to mostly be used in users' CI to check that there code will
 continue to work as expected.
