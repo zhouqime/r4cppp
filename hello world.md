@@ -24,7 +24,7 @@ usually small) cost.
 具体而言，比起C++你可能更喜欢用如 Java, Scala, Haskell, Python 之类的其他语言，但是要么是因
 为抽象层次太高（例如无法直接访问内存、被强制使用自动垃圾收集等等），要么是因为存在性能问题（例如性
 能无法预测或者单纯的是不够快），你没办法使用这些语言。Rust不会强制你使用自动垃圾收集，同时如C++一
-样，你可以直接操作内存的裸指针。Rust认同C++中'仅为使用到的特性买单'的哲学。如果你没有用到某个特性，
+样，你可以直接操作内存的裸指针。Rust认同C++中“仅为使用到的特性买单”的哲学。如果你没有用到某个特性，
 你就不必为之付出任何性能开销。而且，Rust的所有语言特性都有可预测（通常也很小）的开销。
 
 Whilst these constraints make Rust a (rare) viable alternative to C++, Rust also
@@ -41,9 +41,18 @@ programming languages and introduces them to the systems language space.
 Hopefully, that makes programming in Rust more productive, efficient, and
 enjoyable.
 
+这些约束使得Rust有望成功地（同时也是罕见地）成为一门C++的替代语言，与此次同时Rust也有自己的优点：
+内存安全——Rust的类型系统能够确保你不会犯c++中的各种内存错误，内存泄漏、访问未经初始化的内存、
+野指针等等错误都不会在Rust中发生。而且，当加入一些额外的约束时，Rust会尽量阻止其他安全问题——
+例如，通常数组索引会做越界检查（当然，如果你希望避免检查开销，也是可以实现的（代价是安全性）—— Rust
+允许你在非安全（unsafe）区块写包括这个在内的很多非安全代码。至关重要的是，Rust确保非安全代码只能
+在非安全区块中存在，并且不会影响程序的其他部分）。最后，Rust把大量的现代编程语言中的概念引入系统编程
+语言领域，希望这些概念能够使Rust编程变得更加高产、高效且有趣。
+
 In the rest of this section we'll download and install Rust, create a minimal
 Cargo project, and implement Hello World.
 
+在本节剩余的部分我们将下载并安装Rust，创建一个最小的Cargo工程，并且实现“Hello World”。
 
 ## Getting Rust
 
